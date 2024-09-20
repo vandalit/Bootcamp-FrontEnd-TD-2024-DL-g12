@@ -38,6 +38,6 @@ Este repositorio contiene:
 
 Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cualquier cambio importante antes de enviar un pull request.
 
-## Licencia
+## repo original ::
 
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+https://github.com/vandalit/Bootcamp-FrontEnd-TD-DevLATAM2024-g12
