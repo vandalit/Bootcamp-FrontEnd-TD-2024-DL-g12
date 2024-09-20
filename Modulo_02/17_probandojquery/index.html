@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Si me clickeas dos veces desapareceré</p>
+    <p id="MiParrafo" class="centrado">yo tambien</p>
+    <p class="MiClase">yo igual</p>
+    <img src="../08_iguana-page/assets/img/iguana-1.jpg" alt="iguana" width="100px" class="centrado" id="imagen">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // al hacer doble click a etiqueta p, desaparecerá
+            $("p").dblclick(function(){
+                $(this).hide("slow");
+            });
+            $("#MiParrafo").click(function(){
+                $(this).css({
+                    "color":"coral",
+                    "font-size":"2em"
+                });
+            });
+            $(".MiClase").hover(function(){
+                $(this).html("<a href='#''>me converti en un link</a>")
+            });
+            //
+            $("img").click(function(){
+                $(this).css({
+                    "width":"200px"
+                });
+            });
+            $("#imagen").dblclick(function(){
+                $(this).css({
+                    "width":"400px"
+                });
+            });
+            $(".centrado").hover(function(){
+            });
+            $("#imagen.centrado img").hover(function(){
+                $(this).css({
+                    "border":"200px",
+                    "border-color":"coral",
+                });
+            });
+            $("p a.encabezado");
+            $("#imagen, .centrado");
+            $("*");
+            $("[href]");
+            $("input[type='text']");
+            $("p").click(function(){
+                consolge.log("click")
+            });
+            $(".vacaciones.valor").text(("100.000"));
+            $(".vacaciones").css('bacground-color','yellow');
+
+        });
+    </script>
+</body>
+</html>

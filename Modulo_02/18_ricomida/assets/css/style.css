@@ -1,0 +1,29 @@
+.recipe-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.recipe-header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.recipe-details {
+    padding-left: 20px;
+}
+.recipe-details h1 {
+    font-size: 2rem;
+}
+.recipe-actions button {
+    margin-right: 10px;
+}
+.recipe-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.recipe-gallery img {
+    width: 20%;
+    border-radius: 20px;
+}

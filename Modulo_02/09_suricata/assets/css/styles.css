@@ -1,0 +1,141 @@
+:root {
+    --rosa: #e83e8c;
+    --celeste: #17A2B8;
+
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #707070;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;;
+}
+
+
+.navbar {
+    background-color: var(--rosa);
+}
+.navbar-brand img {
+    width: 132px;
+    padding: 0rem .5rem;
+}
+.navbar-brand a {
+    padding: 0rem .8rem;
+}
+#navbarNav {
+    justify-content: end;
+}
+.nav-link {
+    color: var(--blanco);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.productos__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--gris);
+    padding: 0rem .8rem;
+
+    margin-top: 41px;
+    margin-bottom: 29px;
+}
+
+ 
+#carouselExampleIndicators button{
+    background-color: var(--gris);
+}
+
+#carouselExampleIndicators .carousel-control-prev,
+#carouselExampleIndicators .carousel-control-next{
+    background-color: transparent;
+    color: var(--gris);
+}
+.carousel-item {
+    padding-bottom: 1rem;
+}
+#carouselExampleIndicators .card {
+    width: 75%;
+    margin: 2rem auto;
+}
+
+#productosCelular .card {
+    margin: 2rem auto;
+    width: auto;
+}
+
+
+.row {
+    margin-bottom: 64px; 
+    margin: 0 auto;
+    width: 90%;
+}
+
+.card-title {
+    color: #373A3C;
+    font-size: 17px;
+    font-weight: 700;
+}
+.card-text {
+    color: #373A3C;
+    font-size: 16px;
+    font-weight: 400;
+}
+.card-text {
+    min-height: 130px;
+}
+
+
+.metodo-pago {
+    margin-top: 54px;
+    padding: 0rem 1rem;
+    background-color: var(--celeste);
+    height: 170px;
+
+    gap: 4rem;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+
+    color: var(--blanco);
+    font-size: 40px;
+    font-weight: 700;
+}
+.metodo-pago p {
+    text-align: center;
+    margin: 0;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 1.5rem;
+}
+.tarjetas i {
+    font-size: 55px;
+}
+
+
+footer {
+    background-color: #e83e8c;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+footer img {
+    width: 100px;
+
+}
+

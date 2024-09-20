@@ -1,0 +1,146 @@
+/* Paleta de colores*/
+:root {
+    --negro: #000;
+    --blanco: #fff;
+    --gris_oscuro: #1e1a13;
+    --gris_medio: #2e2e2e;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    max-height: 70vh;
+}
+.titulo h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: .5rem;
+    font-weight: 500;
+}
+.bg-header {
+    background-image: url('../img/bg-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    height: 70vw;
+}
+
+
+
+.desc-section {
+    display: flex;
+    
+    gap: 1.3rem;
+
+    width: 80%;
+    margin: 2rem auto;
+    padding-top: 2rem;
+}
+.desc-section p {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+    padding: .5rem 1rem;
+}
+.desc-section img {
+   
+    padding: 1rem;
+}
+
+
+.seccion-caracteristicas {
+    background-color: var(--gris_oscuro);
+}
+.seccion-caracteristicas h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.caracteristicas {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6.5rem;
+}
+.caracteristicas__contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+}
+.caracteristicas__elemento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 2.2rem;
+    font-weight: 300;
+    width: 100%;
+}
+.caracteristicas__elemento p {
+    padding: 16px;
+    font-size: 1.1rem;
+}
+
+
+.fotos {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    
+}
+
+.fotos img {
+    width: 80%;
+}
+
+
+.footer {
+    background-color: #1e1a13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer p {
+    text-align: center;
+    color: var(--blanco);
+    padding: 4rem .5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+footer a{
+    color: var(--blanco);
+}
+
+
+footer div {
+    background-color: #2e2e2e;
+    width: 100%;
+}
+footer div p {
+    color: var(--blanco);
+    text-align: center;
+    padding: 2rem 0rem;
+}
