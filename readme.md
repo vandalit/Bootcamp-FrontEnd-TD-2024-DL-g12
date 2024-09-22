@@ -46,4 +46,4 @@ Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cualq
 
 ## repo original ::
 
-https://github.com/vandalit/Bootcamp-FrontEnd-TD-DevLATAM2024-g12
+https://github.com/vandalit/Bootcamp-FrontEnd-TD-DevLATAM2024-g12 deprecated (private)
