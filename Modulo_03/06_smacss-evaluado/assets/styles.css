@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.blog-header h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px; /* Añadido espacio debajo del título del blog */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que las secciones se ajusten bien en pantallas más pequeñas */
+    justify-content: space-between;
+}
+
+.news, .popular {
+    flex: 1 1 600px; /* Ajusta la base para que cada sección tome al menos 600px de ancho */
+    margin-right: 20px; /* Espacio entre secciones */
+}
+
+.news h2, .popular h2, .categories h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #e0e0e0;
+    padding: 15px;
+    margin-bottom: 20px; /* Aumenta el espacio entre tarjetas */
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Aumenta el espacio entre imagen y texto */
+}
+
+.card img {
+    width: 150px; /* Ajusta el tamaño de las imágenes */
+    height: 150px; /* Asegura que las imágenes sean cuadradas */
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Asegura que el texto tome el espacio restante */
+}
+
+.categories {
+    flex: 0 1 200px; /* Ajusta la flexibilidad y base de las categorías */
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-left: 20px; /* Añade espacio a la izquierda */
+}
+
+.categories ul {
+    list-style-type: none;
+}
+
+.categories li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.categories i {
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%; /* Asegura que el pie de página ocupe toda la anchura */
+}
