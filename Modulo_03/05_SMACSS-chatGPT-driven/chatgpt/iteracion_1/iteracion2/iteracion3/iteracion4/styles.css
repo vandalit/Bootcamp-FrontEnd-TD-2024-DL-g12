@@ -1,0 +1,34 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif; /* A clean, simple font */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+    background-color: #E0E0E0;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width/height */
+}
+
+.side {
+    width: 300px; /* Fixed width for the side column */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between blocks */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in the width/height */
+}
+
+.block {
+    background-color: #FFFFFF;
+    padding: 10px;
+    height: 100px; /* Fixed height for each block */
+    box-sizing: border-box; /* Include padding in the width/height */
+}
