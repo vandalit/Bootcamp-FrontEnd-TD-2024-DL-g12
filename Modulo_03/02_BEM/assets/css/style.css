@@ -1,0 +1,127 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600;700&display=swap'); /* Importa las fuentes Playfair Display y Open Sans */
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.main__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main__title {
+    font-size: 2.5rem; /* Tamaño de fuente de 2.5rem (equivalente a 30px en xx-large) */
+    color: #FFF;
+    font-weight: bold;
+}
+
+.main__title-emphasis {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 10rem;
+    font-family: "Playfair Display", serif;
+}
+
+
+.header {
+    padding: 10px 20px; /* Padding de 10px arriba y abajo, 20px a los lados */
+    position: relative;
+}
+
+.logo__image {
+    max-width: 80px;
+}
+
+.form {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px hsla(100, 40%, 40%, 0.2), -1px -1px 6px hsl(100 40% 40% / .2); /* Sombra de caja con dos sombras: una desplazada 1px hacia abajo y a la derecha, y otra desplazada 1px hacia arriba y a la izquierda, ambas con un desenfoque de 3px y color verde ligero con 20% de opacidad */
+    /*hsla(0, 0%, 8%, 0.2): Este es el color de la sombra en formato HSLA:
+    H (Hue): 0, que corresponde al rojo, pero como la saturación es 0%, este valor no influye y el color resulta ser un gris.
+    S (Saturation): 0%, sin saturación.
+    L (Lightness): 8%, un gris muy oscuro casi negro.
+    A (Alpha): 0.2, esto define la transparencia de la sombra, donde 1 sería totalmente opaco y 0 totalmente transparente.*/
+    max-width: 600px;
+    margin: 30px auto; /* Margen de 20px arriba, 40px abajo, centrado horizontalmente */
+    position: relative;
+}
+
+.form__container {
+    margin-bottom: 15px;
+}
+
+.form__label {
+    display: block; /* El label se muestra como un bloque */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #43b3ae; /* Color gris #43b3ae para los labels */
+}
+
+.form__input-text,
+.form__input-date,
+.form__select {
+    width: calc(100% - 16px); /* Ancho calculado restando 16px para considerar el borde de 1px a cada lado */
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+}
+
+.form__input-text::placeholder,
+.form__input-date::placeholder {
+    color: #43b3ae;
+}
+
+.form__input-date {
+    padding: 7px;
+    color: #43b3ae;
+}
+
+.form__select {
+    padding: 8px; 
+    background-color: #fff;
+    color: #80878e;
+}
+
+.form__select option {
+    color: #43b3ae; 
+}
+
+.button {
+    padding: 10px 20px; /* Padding de 10px arriba y abajo, 20px a los lados */
+    border: none;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 4px; 
+}
+
+.button--positive {
+    background-color: #43b3ae;
+    color: #fff;
+}
+
+.button--default {
+    background-color: #eb4c42;
+    color: #fff;
+}
+
+.form .button--default {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto; /* Alinear a la derecha dentro del contenedor */
+    margin-right: auto; /* Asegurar que no haya margen derecho */
+}
