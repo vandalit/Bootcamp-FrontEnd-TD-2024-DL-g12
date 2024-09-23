@@ -1,100 +1,167 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog FrontEnd</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./assets/css/base.css"/>
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/state.css"/>
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/modules/main/card.css">
+    <link rel="stylesheet" href="./assets/css/modules/main/categorias.css"> --> 
+    <!-- el diseño se rompe -->
+     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="blog-header">
-            <h1>Blog FrontEnd</h1>
-        </header>
-        
-        <main>
-            <section class="news">
-                <h2>Novedades</h2>
+    <main >
+        <section class="contenedor novedades">
+            <div class="destacado">
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Bootstrap">
+                    <img src="./assets/img/posts/bootstrap.png" alt="Bootstrap">
                     <div class="card-info">
                         <h3>Bootstrap</h3>
                         <p>Modifica el tema de Bootstrap con variables CSS</p>
                         <span>24 Noviembre, 2022</span>
+                        <div class="usuario">
+                            <img src="./assets/img/logos/adl.png" alt="">
+                            <h2 class="l-user-title">Desafio Latam</h2>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="lateral">
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="JavaScript">
+                    <img src="./assets/img/posts/Herencia-JS.png" alt="JavaScript" height="100px">
                     <div class="card-info">
                         <h3>Herencia en JavaScript</h3>
                         <span>24 Noviembre, 2022</span>
+                        <div class="usuario">
+                            <img src="./assets/img/logos/adl.png" alt="">
+                            <h2 class="l-user-title">Desafio Latam</h2>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="React">
+                    <img src="./assets/img/posts/reactComponents.png" alt="React" height="100px">
                     <div class="card-info">
                         <h3>Componentes React</h3>
                         <span>24 Noviembre, 2022</span>
+                        <div class="usuario">
+                            <img src="./assets/img/logos/adl.png" alt="">
+                            <h2 class="l-user-title">Desafio Latam</h2>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Semantic Tags">
+                    <img src="./assets/img/posts/Etiquetas-semánticas-HTML.png" alt="Semantic Tags" height="100px">
                     <div class="card-info">
                         <h3>Etiquetas semánticas</h3>
                         <span>24 Noviembre, 2022</span>
+                        <div class="usuario">
+                            <img src="./assets/img/logos/adl.png" alt="">
+                            <h2 class="l-user-title">Desafio Latam</h2>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+
+        </section>
+
+        <section class="contenedor popular">
+            <div>
+            <h2>Populares</h2>
+            <div class="populares">
             
-            <section class="popular">
-                <h2>Populares</h2>
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Vue">
+                    <img src="./assets/img/posts/vue-components.png" alt="Vue">
                     <div class="card-info">
                         <h3>Componentes Vue</h3>
                         <span>24 Noviembre, 2022</span>
+                        <div class="usuario">
+                            <img src="./assets/img/logos/adl.png" alt="">
+                            <h2 class="l-user-title">Desafio Latam</h2>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Sass">
+                    <img src="./assets/img/posts/sass.jpg" alt="Sass">
                     <div class="card-info">
                         <h3>CSS reutilizable con Sass</h3>
                         <span>24 Noviembre, 2022</span>
+                        <div class="usuario">
+                            <img src="./assets/img/logos/adl.png" alt="">
+                            <h2 class="l-user-title">Desafio Latam</h2>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="API">
+                    <img src="./assets/img/posts/api-js.png" alt="API">
                     <div class="card-info">
                         <h3>Consumo de API con JavaScript</h3>
                         <span>24 Noviembre, 2022</span>
+                        <div class="usuario">
+                            <img src="./assets/img/logos/adl.png" alt="">
+                            <h2 class="l-user-title">Desafio Latam</h2>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Bootstrap Components">
+                    <img src="./assets/img/posts/bootstrap.png" alt="Bootstrap Components">
                     <div class="card-info">
                         <h3>Componentes Bootstrap</h3>
                         <span>24 Noviembre, 2022</span>
+                        <div class="usuario">
+                            <img src="./assets/img/logos/adl.png" alt="">
+                            <h2 class="l-user-title">Desafio Latam</h2>
+                        </div>
                     </div>
                 </div>
-            </section>
-            
-            <aside class="categories">
+            </div>
+            </div>
+
+            <div class="categorias">
                 <h2>Categorías</h2>
-                <ul>
-                    <li><i class="fab fa-html5"></i>HTML</li>
-                    <li><i class="fab fa-css3-alt"></i>CSS</li>
-                    <li><i class="fab fa-js-square"></i>JavaScript</li>
-                    <li><i class="fab fa-react"></i>React</li>
-                    <li><i the="fab fa-vuejs"></i>Vue</li>
-                    <li><i class="fab fa-bootstrap"></i>Bootstrap</li>
-                </ul>
-            </aside>
-        </main>
-        
-        <footer>
-            <p>Blog FrontEnd - 2022</p>
-        </footer>
-    </div>
+                <div class="box theme-html">
+                    <img src="./assets/img/logos/html.png" class="box-img" alt="" />
+                    <h3 class="box-title">HTML</h3>
+                </div>
+                <div class="box theme-css">
+                    <img src="./assets/img/logos/css.png" class="box-img" alt="" />
+                    <h3 class="box-title">CSS</h3>
+                </div>
+                <div class="box theme-js">
+                    <img src="./assets/img/logos/js.png" class="box-img" alt="" />
+                    <h3 class="box-title">JavaScript</h3>
+                </div>
+                <div class="box theme-react">
+                    <img src="./assets/img/logos/react.png" class="box-img" alt="" />
+                    <h3 class="box-title">HTML</h3>
+                </div>
+                <div class="box theme-vue">
+                    <img src="./assets/img/logos/vue.png" class="box-img" alt="" />
+                    <h3 class="box-title">CSS</h3>
+                </div>
+                <div class="box theme-bootstrap">
+                    <img src="./assets/img/logos/bootstrap-logo.png" class="box-img" alt="" />
+                    <h3 class="box-title">JavaScript</h3>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <a href="./styles.css">hoja de estilo unica</a>
+
+
+    <footer class="l-footer">
+        <img src="./assets/img/logos/adl.png" alt="">
+        <h4 class="subtitle">Blog FrontEnd</h4>
+        <p>Todos los derechos reservados - 2022</p>
+    </footer>
 </body>
 </html>

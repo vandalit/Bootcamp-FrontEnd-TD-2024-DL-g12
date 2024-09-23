@@ -1,0 +1,32 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 60px;
+    gap: 20px;
+}
+
+.popular {
+    grid-template-columns: 6fr 2fr;
+}
+
+.populares {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lateral .card {
+    display: flex;
+}
+
+.destacado .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

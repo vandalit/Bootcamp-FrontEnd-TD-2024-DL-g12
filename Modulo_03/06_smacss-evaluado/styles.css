@@ -1,89 +1,153 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+img {
+    max-height: 500px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+.usuario img {
+    height: 30px;
+    display: inline;
+    align-items: baseline;
+    justify-content: baseline;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #ffffff;
+.usuario h2{
+    font-size: small;
+    display: inline;
+}
+
+
+.card {
+    /* background-color: coral; */
     padding: 20px;
+    border: 3px solid black;
 }
 
-.blog-header h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px; /* Añadido espacio debajo del título del blog */
+.contenedor {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 60px;
+    gap: 20px;
 }
 
-main {
+.lateral .card {
     display: flex;
-    flex-wrap: wrap; /* Asegura que las secciones se ajusten bien en pantallas más pequeñas */
+}
+
+.destacado .card {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.news, .popular {
-    flex: 1 1 600px; /* Ajusta la base para que cada sección tome al menos 600px de ancho */
-    margin-right: 20px; /* Espacio entre secciones */
-}
-
-.news h2, .popular h2, .categories h2 {
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.card {
-    background-color: #e0e0e0;
-    padding: 15px;
-    margin-bottom: 20px; /* Aumenta el espacio entre tarjetas */
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Aumenta el espacio entre imagen y texto */
-}
-
-.card img {
-    width: 150px; /* Ajusta el tamaño de las imágenes */
-    height: 150px; /* Asegura que las imágenes sean cuadradas */
-}
-
-.card-info {
+.lateral {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Asegura que el texto tome el espacio restante */
+    justify-content: space-between;
 }
-
-.categories {
-    flex: 0 1 200px; /* Ajusta la flexibilidad y base de las categorías */
-    background-color: #f8f8f8;
+.lateral .card-info {
     padding: 10px;
-    margin-left: 20px; /* Añade espacio a la izquierda */
 }
 
-.categories ul {
-    list-style-type: none;
+.popular {
+    
+    grid-template-columns: 6fr 2fr;
+}
+.populares {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  
+}
+.populares .card img {
+    display: block;
+    width: 100%; /* Ajusta la imagen al ancho del contenedor .card */
+    height: 200px; /* Fija la altura, pero puede distorsionar la imagen */
+    object-fit: cover; /* Mantiene la relación de aspecto y cubre el área del contenedor */
+}
+.categorias {
+    padding: 20px;
+    /* background-color: #5d4f4f; */
 }
 
-.categories li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.categories i {
-    margin-right: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
+.categorias .box {
+    /* background-color: #fff; Color de fondo para cada item de la lista */
+    border: 2px solid #2e2d2d; /* Borde para las cajas */
+    padding: 10px 15px; /* Espaciado interno para texto e ícono */
+    margin-bottom: 10px; /* Espacio entre cada caja */
+    display: flex; /* Alinea íconos y texto */
+    align-items: center; /* Centra el contenido verticalmente */
     color: #fff;
-    margin-top: 20px;
-    width: 100%; /* Asegura que el pie de página ocupe toda la anchura */
+}
+.categorias .box img {
+    height: 30px;
+}
+
+/* Theme */
+.theme-tag-bg {
+    background-color: #729E2E;
+    color: #fff;
+    font-weight: bold;
+}
+
+.theme-html {
+    background-color: #E93E30;
+}
+
+.theme-css {
+    background-color: #299ED5;
+}
+
+.theme-js {
+    background-color: #F7E018;
+}
+
+.theme-react {
+    background-color: #272221;
+}
+
+.theme-vue {
+    background-color: #04b444;
+}
+
+.theme-bootstrap {
+    background-color: #ad18f7a2;
+}
+
+.contenedor .populares  .card .card-info .usuario img {
+    height: 30px;
+    display: inline;
+    align-items: baseline;
+    justify-content: baseline;
+}
+.contenedor .populares .card .card-info .usuario h2{
+    font-size: small;
+    display: inline;
+}
+
+.l-footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 20px 0;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.l-footer img {
+    width: 50px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.l-footer h4 {
+    position: relative;
+    float: left;
+    margin-top: 15px;
+}
+
+.l-footer p {
+    position: relative;
+    float: right;
+    margin-top: 15px;
 }

@@ -1,0 +1,29 @@
+.theme-tag-bg {
+    background-color: #729E2E;
+    color: #fff;
+    font-weight: bold;
+}
+
+.theme-html {
+    background-color: #E93E30;
+}
+
+.theme-css {
+    background-color: #299ED5;
+}
+
+.theme-js {
+    background-color: #F7E018;
+}
+
+.theme-react {
+    background-color: #272221;
+}
+
+.theme-vue {
+    background-color: #04b444;
+}
+
+.theme-bootstrap {
+    background-color: #ad18f7a2;
+}
