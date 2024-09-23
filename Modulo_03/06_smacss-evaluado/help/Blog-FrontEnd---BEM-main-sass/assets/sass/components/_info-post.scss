@@ -1,0 +1,37 @@
+
+/* .info.post es reutilizable en los post de las sección populares */
+
+.info-post {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-post__date {
+    font-size: 16px;
+}
+
+.info-post__title {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.info-post-author {
+    display: flex;
+
+}
+
+.info-post-author__image {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 10px;
+
+}
+
+.info-post-author__name {
+    align-self: center;
+}
+
