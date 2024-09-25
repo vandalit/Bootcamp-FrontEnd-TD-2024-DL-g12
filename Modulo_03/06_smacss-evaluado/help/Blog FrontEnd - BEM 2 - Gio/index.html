@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Poppins - Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blog FrontEnd</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img
+            src="assets/img/logos/adl.png"
+            class="logo__img"
+            alt="Logo Blog FrontEnd"
+          />
+          <span class="logo__text">Blog FrontEnd</span>
+        </div>
+      </header>
+      <main class="main">
+        <h2 class="main__title">Novedades</h2>
+        <article class="principal-post">
+          <img
+            src="assets/img/posts/bootstrap.png"
+            class="principal-post__image"
+          />
+          <span class="principal-post__date">24 Noviembre, 2022</span>
+          <h3 class="principal-post__title">
+            Modifica el tema de Bootstrap con variables CSS
+          </h3>
+          <!-- El bloque autor (imagen y nombre) será un componente reutilizable, y sus tamaños se definen con modificadores -->
+          <img
+            class="principal-post__author-image"
+            src="assets/img/logos/adl.png"
+            alt=""
+            width="55"
+            height="55"
+          />
+          <span class="principal-post__author-name">Desafío Latam</span>
+        </article>
+        <section class="small-posts">
+          <article class="small-post">
+            <!-- Las imágenes las dejaremos como elementos no reutilizables ya que son de tamaños diferentes a las de la sección Populares -->
+            <img
+              src="assets/img/posts/Herencia-JS.png"
+              alt=""
+              class="small-post__image"
+            />
+            <!-- Este div lo dejamos como bloque, ya que podemos ocupar la fecha, el título y el autor como componentes en los posts de la sección de populares -->
+            <div class="info-post">
+              <span class="info-post__date">24 Noviembre, 2022</span>
+              <h4 class="info-post__title">Herencia en JavaScript</h4>
+              <div class="info-post-author">
+                <img
+                  class="info-post-author__image"
+                  src="assets/img/logos/adl.png"
+                  alt=""
+                />
+                <span class="info-post-author__name">Desafío Latam</span>
+              </div>
+            </div>
+          </article>
+          <article class="small-post">
+            <!-- Las imágenes las dejaremos como elementos no reutilizables ya que son de tamaños diferentes a las de la sección Populares -->
+            <img
+              src="assets/img/posts/Etiquetas-semánticas-HTML.png"
+              alt=""
+              class="small-post__image"
+            />
+            <!-- Este div lo dejamos como bloque, ya que podemos ocupar la fecha, el título y el autor como componentes en los posts de la sección de populares -->
+            <div class="info-post">
+              <span class="info-post__date">24 Noviembre, 2022</span>
+              <h4 class="info-post__title">Etiquetas semánticas</h4>
+              <div class="info-post-author">
+                <img
+                  class="info-post-author__image"
+                  src="assets/img/logos/adl.png"
+                  alt=""
+                />
+                <span class="info-post-author__name">Desafío Latam</span>
+              </div>
+            </div>
+          </article>
+          <article class="small-post">
+            <!-- Las imágenes las dejaremos como elementos no reutilizables ya que son de tamaños diferentes a las de la sección Populares -->
+            <img
+              src="assets/img/posts/reactComponents.png"
+              alt=""
+              class="small-post__image"
+            />
+            <!-- Este div lo dejamos como bloque, ya que podemos ocupar la fecha, el título y el autor como componentes en los posts de la sección de populares -->
+            <div class="info-post">
+              <span class="info-post__date">24 Noviembre, 2022</span>
+              <h4 class="info-post__title">Componentes React</h4>
+              <div class="info-post-author">
+                <img
+                  class="info-post-author__image"
+                  src="assets/img/logos/adl.png"
+                  alt=""
+                />
+                <span class="info-post-author__name">Desafío Latam</span>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+      <hr class="separator" />
+      <section class="popular-and-tags">
+        <section class="popular-posts">
+          <h2 class="popular-posts__title">Populares</h2>
+          <article class="popular-post">
+            <img
+              class="popular-post__image"
+              src="assets/img/posts/vue-components.png"
+              alt=""
+            />
+            <div class="info-post info-post--populares">
+              <span class="info-post__date">24 Noviembre, 2022</span>
+              <h4 class="info-post__title">Componentes Vue</h4>
+              <div class="info-post-author">
+                <img
+                  class="info-post-author__image"
+                  src="assets/img/logos/adl.png"
+                  alt=""
+                />
+                <span class="info-post-author__name">Desafío Latam</span>
+              </div>
+            </div>
+          </article>
+          <article class="popular-post">
+            <img
+              class="popular-post__image"
+              src="assets/img/posts/api-js.png"
+              alt=""
+            />
+            <div class="info-post info-post--populares">
+              <span class="info-post__date">24 Noviembre, 2022</span>
+              <h4 class="info-post__title">Consumo de API con JavaScript</h4>
+              <div class="info-post-author">
+                <img
+                  class="info-post-author__image"
+                  src="assets/img/logos/adl.png"
+                  alt=""
+                />
+                <span class="info-post-author__name">Desafío Latam</span>
+              </div>
+            </div>
+          </article>
+          <article class="popular-post">
+            <img
+              class="popular-post__image"
+              src="assets/img/posts/sass.jpg"
+              alt=""
+            />
+            <div class="info-post info-post--populares">
+              <span class="info-post__date">24 Noviembre, 2022</span>
+              <h4 class="info-post__title">Css reutilizable con Sass</h4>
+              <div class="info-post-author">
+                <img
+                  class="info-post-author__image"
+                  src="assets/img/logos/adl.png"
+                  alt=""
+                />
+                <span class="info-post-author__name">Desafío Latam</span>
+              </div>
+            </div>
+          </article>
+          <article class="popular-post">
+            <img
+              class="popular-post__image"
+              src="assets/img/posts/bootstrap.png"
+              alt=""
+            />
+            <div class="info-post info-post--populares">
+              <span class="info-post__date">24 Noviembre, 2022</span>
+              <h4 class="info-post__title">Componentes Bootstrap</h4>
+              <div class="info-post-author">
+                <img
+                  class="info-post-author__image"
+                  src="assets/img/logos/adl.png"
+                  alt=""
+                />
+                <span class="info-post-author__name">Desafío Latam</span>
+              </div>
+            </div>
+          </article>
+        </section>
+        <aside class="tags">
+          <h2 class="tags__title">Categorías</h2>
+          <div class="tag tag--html">
+            <img class="tag__image" src="assets/img/logos/html.png" alt="">
+            <span class="tag__title">HTML 5</span>
+          </div>
+          <div class="tag tag--javascript">
+            <img class="tag__image" src="assets/img/logos/js.png" alt="">
+            <span class="tag__title">JavaScript</span>
+          </div>
+          <div class="tag tag--css">
+            <img class="tag__image" src="assets/img/logos/css.png" alt="">
+            <span class="tag__title">CSS</span>
+          </div>
+          <div class="tag tag--react">
+            <img class="tag__image" src="assets/img/logos/react.png" alt="">
+            <span class="tag__title">React</span>
+          </div>
+          <div class="tag tag--vue">
+            <img class="tag__image" src="assets/img/logos/vue.png" alt="">
+            <span class="tag__title">Vue</span>
+          </div>
+          <div class="tag tag--bootstrap">
+            <img class="tag__image" src="assets/img/logos/bootstrap-logo.png" alt="">
+            <span class="tag__title">Bootstrap</span>
+          </div>
+        </aside>
+      </section>
+      <hr class="separator">
+      <footer class="footer">
+        <div class="logo">
+          <img
+            src="assets/img/logos/adl.png"
+            class="logo__img"
+            alt="Logo Blog FrontEnd"
+          />
+          <span class="logo__text">Blog FrontEnd</span>
+        </div>
+        <span class="footer__text">Desafío Latam - 2023</span>
+      </footer>
+    </div>
+  </body>
+</html>

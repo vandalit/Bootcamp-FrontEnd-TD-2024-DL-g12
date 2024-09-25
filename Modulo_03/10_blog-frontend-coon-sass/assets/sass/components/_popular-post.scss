@@ -1,0 +1,29 @@
+/* Popular posts */
+
+.popular-posts {
+    @include flex-center(row wrap,space-between);
+    width: 700px;
+}
+
+.popular-posts__title {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.popular-post {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 20px;
+}
+
+.popular-post__image {
+    width: 300px;
+    height: 200px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.info-post--populares {
+    width: 300px;
+    margin-top: 20px;
+}

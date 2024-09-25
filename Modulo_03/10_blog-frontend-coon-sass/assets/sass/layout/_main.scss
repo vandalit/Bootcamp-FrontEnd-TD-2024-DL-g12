@@ -1,0 +1,13 @@
+/* Main */
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.main__title {
+    margin-bottom: 20px;
+    width: 100%;
+}
