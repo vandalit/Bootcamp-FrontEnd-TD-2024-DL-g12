@@ -38,9 +38,9 @@
                 <a class="navbar__link nav-link" href="#">Tienda</a>
             </div>
             <div class="navbar__form-container navbar-nav ms-auto">
-                <form class="navbar__form">
-                    <input class="navbar__button navbar__button--passive" type="submit" value="Iniciar sesión" />
-                    <input class="navbar__button navbar__button--active" type="submit" value="Regístrarse" />
+                <form class="navbar__form" id="navbarForm">
+                    <input class="navbar__button navbar__button--passive" id="loginBtn" type="button" value="Iniciar sesión" />
+                    <input class="navbar__button navbar__button--active" id="registerBtn" type="button" value="Regístrarse" />
                 </form>
             </div>
         </div>
@@ -109,4 +109,15 @@
     </script>
     <!-- hoja de JavaScript -->
     <script src="assets\js\script.js"></script>
+
+    <!-- rickrollea -->
+    <script>
+        document.getElementById('loginBtn').onclick = function() {
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // URL para iniciar sesión
+        };
+    
+        document.getElementById('registerBtn').onclick = function() {
+            window.location.href = 'https://www.youtube.com/watch?v=2yJgwwDcgV8'; // URL para registrarse
+        };
+    </script>
 </body>
