@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Van Dalit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Mis habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#nonono">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container text-center mt-5" id="inicio">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <img src="https://via.placeholder.com/600x400" alt="Ilustración" class="img-fluid mb-4">
+                <h1 class="font-weight-bold">Soy Van Dalit</h1>
+                <h2 class="text-secondary">Desarrollador FrontEnd & Dev UX</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio recusandae quae eligendi.</p>
+                <button class="btn btn-primary btn-lg">Contáctame (please dont)</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5" id="skills">
+        <h3 class="text-center mb-4">Mis habilidades</h3>
+        <div class="row text-center">
+            <div class="col-md-3 col-lg-2 col-sm">
+                <i class="fab fa-html5 fa-3x text-magenta"></i>
+                <p>HTML</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm">
+                <i class="fab fa-css3-alt fa-3x text-magenta"></i>
+                <p>CSS</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm">
+                <i class="fab fa-js fa-3x text-magenta"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm">
+                <i class="fab fa-git-alt fa-3x text-magenta"></i>
+                <p>Git</p>
+            </div>
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-md-3 col-lg-2 col-sm">
+                <i class="fab fa-github fa-3x text-magenta"></i>
+                <p>GitHub</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm">
+                <i class="fab fa-bootstrap fa-3x text-magenta"></i>
+                <p>Bootstrap</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm">
+                <i class="fab fa-sass fa-3x text-magenta"></i>
+                <p>Sass</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm">
+                <i class="fab fa-vuejs fa-3x text-magenta"></i>
+                <p>Vue</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <h3 class="text-center mb-4">Mis Proyectos</h3>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350x200" alt="Proyecto 1" class="img-fluid mb-2">
+                <p>Meet & Coffee</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350x200" alt="Proyecto 2" class="img-fluid mb-2">
+                <p>Iguanabe</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350x200" alt="Proyecto 3" class="img-fluid mb-2">
+                <p>helpme.bat</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 mb-5">
+        <h3 class="text-center mb-4">Contáctame (no realmente)</h3>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Tu Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+                <div class="text-center mt-4">
+                    <p><i class="fas fa-phone"></i> +56999987766</p>
+                    <p><i class="fas fa-envelope"></i> email@gmail.com</p>
+                    <p><i class="fab fa-linkedin"></i> LinkedIn</p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/vandalit">GitHub</a></p>
+                    <p><i class="fab fa-instagram"></i> Instagram</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
