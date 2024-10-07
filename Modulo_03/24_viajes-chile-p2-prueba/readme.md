@@ -1,4 +1,6 @@
 prueba viajes chile 2
+<a href="https://vandalit.github.io/Bootcamp-FrontEnd-TD-2024-DL-g12/Modulo_03/24_viajes-chile-p2-prueba/index.html">Deploy</a>
+
 
 comandos terminal:
 npm init -y
