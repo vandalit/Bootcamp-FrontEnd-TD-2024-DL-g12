@@ -12272,6 +12272,8 @@ body {
 
 .link-color {
   color: white; /*color del link*/
+  list-style: none;
+  text-decoration: none;
 }
 
 /* Sección quienes somos */
