@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #resultado, #resumenJuego {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        #opcionesJuego, #resumenJuego {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Piedra, Papel o Tijeras</h1>
+        <div id="inicioJuego">
+            <label for="numPartidas">¿Cuántas partidas quieres jugar?</label>
+            <input type="number" id="numPartidas" min="1" value="1">
+            <button onclick="iniciarJuego()">Iniciar Juego</button>
+        </div>
+        <div id="opcionesJuego">
+            <p>Partida <span id="partidaActual">1</span> de <span id="totalPartidas">1</span></p>
+            <button onclick="jugar('piedra')">Piedra</button>
+            <button onclick="jugar('papel')">Papel</button>
+            <button onclick="jugar('tijeras')">Tijeras</button>
+        </div>
+        <div id="resultado"></div>
+        <div id="resumenJuego"></div>
+    </div>
+
+    <script>
+        let partidasRestantes = 0;
+        let victoriasJugador = 0;
+        let victoriasComputadora = 0;
+        let empates = 0;
+
+        function iniciarJuego() {
+            partidasRestantes = parseInt(document.getElementById('numPartidas').value);
+            if (partidasRestantes < 1) {
+                alert("Por favor, ingresa un número válido de partidas.");
+                return;
+            }
+            document.getElementById('inicioJuego').style.display = 'none';
+            document.getElementById('opcionesJuego').style.display = 'block';
+            document.getElementById('totalPartidas').textContent = partidasRestantes;
+            actualizarPartidaActual();
+        }
+
+        function actualizarPartidaActual() {
+            document.getElementById('partidaActual').textContent = document.getElementById('totalPartidas').textContent - partidasRestantes + 1;
+        }
+
+        function jugar(eleccionJugador) {
+            const opciones = ['piedra', 'papel', 'tijeras'];
+            const eleccionComputadora = opciones[Math.floor(Math.random() * 3)];
+            
+            let resultado;
+            
+            if (eleccionJugador === eleccionComputadora) {
+                resultado = "Empate!";
+                empates++;
+            } else if (
+                (eleccionJugador === 'piedra' && eleccionComputadora === 'tijeras') ||
+                (eleccionJugador === 'papel' && eleccionComputadora === 'piedra') ||
+                (eleccionJugador === 'tijeras' && eleccionComputadora === 'papel')
+            ) {
+                resultado = "¡Felicidades! Has ganado esta partida.";
+                victoriasJugador++;
+            } else {
+                resultado = "Has perdido contra la máquina en esta partida.";
+                victoriasComputadora++;
+            }
+            
+            document.getElementById('resultado').innerHTML = `
+                Elegiste: ${eleccionJugador}<br>
+                La computadora eligió: ${eleccionComputadora}<br>
+                ${resultado}
+            `;
+
+            partidasRestantes--;
+            if (partidasRestantes > 0) {
+                actualizarPartidaActual();
+            } else {
+                finalizarJuego();
+            }
+        }
+
+        function finalizarJuego() {
+            document.getElementById('opcionesJuego').style.display = 'none';
+            document.getElementById('resumenJuego').style.display = 'block';
+            document.getElementById('resumenJuego').innerHTML = `
+                <h2>Resumen del Juego</h2>
+                <p>Victorias del jugador: ${victoriasJugador}</p>
+                <p>Victorias de la computadora: ${victoriasComputadora}</p>
+                <p>Empates: ${empates}</p>
+                <button onclick="location.reload()">Jugar de nuevo</button>
+            `;
+        }
+    </script>
+</body>
+</html>

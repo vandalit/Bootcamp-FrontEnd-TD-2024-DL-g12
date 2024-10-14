@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachipún!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cachipún!</h1>
+        <div id="inicioJuego">
+            <label for="numPartidas">¿A la de tres? ¿A la de cinco?</label>
+            <input type="number" id="numPartidas" min="1" value="1">
+            <button onclick="iniciarJuego()">Listo!</button>
+        </div>
+        <div id="opcionesJuego">
+            <p>Partida <span id="partidaActual">1</span> de <span id="totalPartidas">1</span></p>
+            <button onclick="jugar('piedra')">Piedra</button>
+            <button onclick="jugar('papel')">Papel</button>
+            <button onclick="jugar('tijeras')">Tijeras</button>
+        </div>
+        <div id="resultado"></div>
+        <div id="resumenJuego"></div>
+    </div>
+    
+    <script src="scrip.js"></script>
+</body>
+</html>
