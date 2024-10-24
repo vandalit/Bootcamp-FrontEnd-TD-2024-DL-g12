@@ -1,0 +1,21 @@
+
+.card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+.card-title {
+    font-weight: bold;
+    color: #d32f2f;
+}
+.btn-ver {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+}
+.btn-ver:hover {
+    background-color: #b71c1c;
+}
