@@ -14,5 +14,8 @@
     "@babel/core": "^7.25.9",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.25.9"
+  },
+  "dependencies": {
+    "core-js": "^3.38.1"
   }
 }
