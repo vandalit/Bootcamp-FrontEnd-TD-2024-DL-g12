@@ -1,0 +1,77 @@
+/* General adjustments for the dark theme */
+body {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+/* Customize table headers and rows */
+table thead th {
+    background-color: #1f1f1f;
+    color: #ff6f61;
+    border-color: #555;
+    padding: 10px;
+    text-align: center;
+}
+
+table tbody tr {
+    background-color: #292929;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+table tbody tr:hover {
+    background-color: #ff6f61;
+    color: #121212;
+}
+
+/* Form elements customization */
+.form-control {
+    background-color: #292929;
+    color: #f5f5f5;
+    border-color: #ff6f61;
+}
+
+.form-control:focus {
+    background-color: #292929;
+    color: #f5f5f5;
+    border-color: #ff6f61;
+    box-shadow: none;
+}
+
+/* Button customization */
+.btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+}
+
+.btn-primary:hover {
+    background-color: #ff8f81;
+    border-color: #ff8f81;
+}
+
+/* Centered headings */
+h1, h2 {
+    color: #ff6f61;
+}
+
+body {
+    background-color: #333333;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center;     /* Centramos verticalmente */
+    height: 100vh;           /* Aseguramos que el body tome toda la pantalla */
+    margin: 0;               /* Eliminamos el margen por defecto del body */
+}
+/* Centrar el contenedor y agregar padding */
+.container {
+    max-width: 800px;    /* Ancho máximo para mantener el contenido bien centrado */
+    padding: 20px;       /* Espacio interno alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados opcionales para estilo */
+    background-color: #1e1e1e; /* Fondo más oscuro para el contenedor */
+}
+
+/* Personalización de la tabla y formularios */
+table.table {
+    margin-bottom: 20px;  /* Espacio debajo de la tabla */
+}
