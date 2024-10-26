@@ -1,0 +1,27 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: rgb(40, 40, 40);
+    color: beige;
+}
+
+img {
+    width: 10%;
+    background-color: coral;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: rgb(35, 35, 35);
+    color: aqua;
+}
+.btn-link {
+    text-decoration: none;
+    color: aquamarine;
+}
+.btn-link:hover {
+    text-decoration: none;
+    color: coral;
+}
