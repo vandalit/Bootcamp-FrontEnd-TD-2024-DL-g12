@@ -56,5 +56,5 @@ pelicula.playMultimedia();
 serie.playMultimedia();
 
 // Modificar el inicio del video de Música
-musica.setInicio(1); // Empieza desde el seg 1
+pelicula.setInicio(20); // Empieza desde el seg 1
 
