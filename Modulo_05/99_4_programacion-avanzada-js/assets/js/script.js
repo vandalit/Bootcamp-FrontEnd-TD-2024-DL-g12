@@ -74,6 +74,13 @@ const AnimalData = async () => {
             document.getElementById('preview').innerHTML = '';
         }
     });
+
+    // Seleccionar el botón de limpiar y agregar evento
+    document.getElementById('btnLimpiar').addEventListener('click', () => {
+        // Limpiar la sección de tarjetas de animales
+        document.getElementById('Animales').innerHTML = '';
+    });
+
 })();
 
 // Mostrar el animal en el DOM
@@ -127,6 +134,7 @@ const reproducirSonido = (sonido) => {
         alert('Hubo un problema al reproducir el sonido. Por favor, inténtalo de nuevo.');
     }
 };
+
 // Evento para detener el sonido al cerrar el modal
 const modal = document.getElementById('exampleModal');
 modal.addEventListener('hidden.bs.modal', () => {
