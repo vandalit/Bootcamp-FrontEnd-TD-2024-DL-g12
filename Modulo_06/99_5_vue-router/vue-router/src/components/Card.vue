@@ -7,7 +7,7 @@
       <div class="col-sm-4 col-12 px-5 mb-4">
 
         <div class="card">
-          <img src="../assets/img/colaciones.jpg" class="card-img-top" alt="colaciones" />
+          <img src="../../assets/img/colaciones.jpg" class="card-img-top" alt="colaciones" />
           <div class="card-body">
             <h5 class="card-title fw-bold">Colaciones</h5>
             <p class="card-text">
