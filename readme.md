@@ -1,9 +1,5 @@
 <img src="https://talentodigitalparachile.cl/wp-content/uploads/2021/06/desarrollador-1288x724-1.jpg" alt="Logo de GitHub" width="800" height="449">
 
-# pages (deploy) [index]
-<a href="https://vandalit.github.io/Bootcamp-FrontEnd-TD-2024-DL-g12/">https://vandalit.github.io/Bootcamp-FrontEnd-TD-2024-DL-g12/</a>
-
-
 <a href="https://talentodigitalparachile.cl/curso/desarrollador-aplicaciones-front-end-trainee/">Talento Digital para Chile</a>
 
 
@@ -44,6 +40,3 @@ Este repositorio contiene:
 
 Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cualquier cambio importante antes de enviar un pull request.
 
-## repo original ::
-
-https://github.com/vandalit/Bootcamp-FrontEnd-TD-DevLATAM2024-g12 deprecated (private)
