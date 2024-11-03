@@ -1,47 +1,89 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="app-container">
+    <nav class="nav-container">
+      <router-link v-if="!isLoggedIn" to="/login" class="nav-link">Inicia Sesión</router-link>
+      <router-link v-if="!isLoggedIn" to="/signup" class="nav-link">Registrate</router-link>
+      <router-link v-if="isLoggedIn" to="/" class="nav-link">Home</router-link>
+      <button v-if="isLoggedIn" @click="logout" class="logout-button">Cerrar Sesión</button>
+    </nav>
+    <router-view></router-view>
+  </div>
 </template>
 
+<script>
+import { auth, signOut, onAuthStateChanged } from './auth.js'
+
+export default {
+  data() {
+    return {
+      isLoggedIn: false,
+    };
+  },
+  created() {
+    onAuthStateChanged(auth, (user) => {
+      this.isLoggedIn = !!user;
+    });
+  },
+  methods: {
+    async logout() {
+      await signOut(auth);
+      this.isLoggedIn = false;
+      this.$router.push('/login');
+    }
+  }
+}
+</script>
+
 <style scoped>
-header {
-  line-height: 1.5;
+.app-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+  min-height: 50vh;
+  margin-inline: 300px;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+.nav-link {
+  padding: 10px 20px;
+  color: white;
+  background-color: #a1db34;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+.nav-link:hover {
+  background-color: #0eda5c;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.logout-button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+router-view {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 </style>
